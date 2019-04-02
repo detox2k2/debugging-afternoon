@@ -3,7 +3,9 @@ import "./ShoppingCart.css";
 
 class ShoppingCart extends Component {
   render() {
+    console.log(this.props)
     let shoppingCartDisplay = this.props.cart.map((element, index) => {
+      console.log(element)
       return (
         <div className="shopping-cart-product-container" key={index}>
           <img src={element.image} alt="" />
